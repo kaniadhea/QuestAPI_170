@@ -1,6 +1,8 @@
 package com.example.pam11.service
 
+import com.example.pam11.model.Mahasiswa
 import retrofit2.http.Body
+import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.POST
@@ -24,6 +26,9 @@ interface MahasiswaService {
     suspend fun insertMahasiswa(@Body mahasiswaService: MahasiswaService)
 
     @PUT("editmahasiswa.php/{nim}")
-    suspend fun updateMahasiswa(@Query("nim")nim: String, @Body)
+    suspend fun updateMahasiswa(@Query("nim")nim: String, @Body mahasiswa: Mahasiswa)
+
+    @DELETE("deletemahasiswa.php/{nim}")
+    suspend fun deleteMahasiswa(@Query("nim")nim: String,@Body mahasiswa: Mahasiswa)
 
 }
