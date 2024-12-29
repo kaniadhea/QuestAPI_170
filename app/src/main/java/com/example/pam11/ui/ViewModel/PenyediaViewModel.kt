@@ -8,8 +8,8 @@ import com.example.pam11.MahasiswaApplications
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {
-        initializer { HomeViewModel(aplikasiKontak().container.kontakRepository) }
-        initializer { InsertViewModel(aplikasiKontak().container.kontakRepository) }
+        initializer { HomeViewModel(aplikasiKontak().container.mahasiswaRepository) }
+        initializer { InsertViewModel(aplikasiKontak().container.mahasiswaRepository) }
     }
 }
 
