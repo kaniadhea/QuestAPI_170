@@ -9,12 +9,39 @@ import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pam11.ui.ViewModel.InsertUiEvent
+import com.example.pam11.ui.ViewModel.InsertViewModel
+import com.example.pam11.ui.navigasi.DestinasiNavigasi
 
+
+object DestinasiEntry : DestinasiNavigasi{
+    override val route = "item_entry"
+    override val titleRes = "Entry Mhs"
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun EntryMhsScreen(
+    navigateBack:()->Unit,
+    modifier: Modifier = Modifier,
+    viewModel: InsertViewModel = viewModel(factory = PenyediaViewModel.Factory)
+
+){
+    val coroutineScope = rememberCoroutineScope()
+    val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
+    Scaffold (
+
+    )
+}
 
 @Composable
 fun EntryBody(
