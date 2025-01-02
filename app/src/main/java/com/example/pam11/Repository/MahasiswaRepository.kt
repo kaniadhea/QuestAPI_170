@@ -20,7 +20,7 @@ class NetworkMahasiswaReposiroty(
     private val mahasiswaApiService: MahasiswaService
 ): MahasiswaRepository {
     override suspend fun getMahasiswa(): List<Mahasiswa> =
-        mahasiswaApiService.getAllMahasiswa()
+        mahasiswaApiService.getAllMahasiswa().data
     override suspend fun insertMahasiswa(mahasiswa: Mahasiswa) {
         mahasiswaApiService.insertMahasiswa(mahasiswa)
     }

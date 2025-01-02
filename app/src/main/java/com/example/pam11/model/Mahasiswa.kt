@@ -5,7 +5,14 @@ import kotlinx.serialization.Serializable
 
 
 @Serializable
-data class Mahasiswa(
+data class AllMahasiswaRespons (
+    val status: Boolean,
+    val message: String,
+    val data: List<Mahasiswa>
+)
+
+@Serializable
+data class Mahasiswa (
     val nim: String,
     val nama: String,
     val alamat: String,
@@ -16,3 +23,4 @@ data class Mahasiswa(
     val kelas: String,
     val angkatan: String
 )
+
