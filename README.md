@@ -20,6 +20,10 @@
 //hapus data
 ![image](https://github.com/user-attachments/assets/5ef73b04-b986-4dc6-89ac-742ad24e2a0a)
 
+//Data di database
+![image](https://github.com/user-attachments/assets/16e826ca-a472-4f20-b26d-3a5d4e9041b9)
+
+
 
 
 
